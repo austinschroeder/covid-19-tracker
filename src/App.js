@@ -1,7 +1,9 @@
 
 import { useState, useEffect } from 'react';
 import { MenuItem, FormControl, Select, Card, CardContent  } from '@material-ui/core';
-import './App.css';
+import InfoBox from './components/Infobox'
+import Map from './components/Map'
+import './css/App.css';
 
 function App() {
   const [countries, setCountries] = useState([]);
@@ -33,18 +35,37 @@ function App() {
 
   return (
     <div className="app">
-      <div className="app-header">
-        <h1>Covid 19 Tracker</h1>
-        <FormControl className="app-dropdown">
-          <Select variant="outlined" onChange={onCountryChange} value={country}>
-            <MenuItem value="worldwide">Worldwide</MenuItem>
-            {countries.map((country) => (
-              <MenuItem value={country.value}>{country.name}</MenuItem>
-            ))}
-          </Select>
-        </FormControl>
+      <div className="app-left">
+        <div className="app-header">
+          <h1>Covid 19 Tracker</h1>
+          <FormControl className="app-dropdown">
+            <Select variant="outlined" onChange={onCountryChange} value={country}>
+              <MenuItem value="worldwide">Worldwide</MenuItem>
+              {countries.map((country) => (
+                <MenuItem value={country.value}>{country.name}</MenuItem>
+              ))}
+            </Select>
+          </FormControl>
+        </div>
+
+        <div className="app-stats">
+          <InfoBox title="Coronavirus Cases" cases={123} total={2000}/>
+
+          <InfoBox title="Recovered" cases={123} total={3000}/>
+          
+          <InfoBox title="Deaths" cases={123} total={4000}/>
+        </div>
+
+        <Map/>
       </div>
 
+      <Card className="app-right">
+        <CardContent>
+          <h3>Live Cases by Country</h3>
+
+          <h3>Worldwide new cases</h3>
+        </CardContent>          
+      </Card>
       
     </div>
   );
