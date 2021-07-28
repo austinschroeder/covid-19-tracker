@@ -7,7 +7,7 @@
 
 ## This app was created with React, Chart.js, Numeral, Leaflet, also using API from Disease.sh.
 
-![](./CovidWireFrame.png)
+![](./src/CovidWireFrame.png)
 
 
 
