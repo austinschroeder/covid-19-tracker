@@ -1,5 +1,6 @@
 {
   "name": "covid-19-tracker",
+  "homepage": "https://austinschroeder.github.io/covid-19-tracker/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,12 +9,12 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "chart.js": "^2.9.4",
-    "numeral": "^2.0.6",
     "leaflet": "^1.6.0",
-    "react-leaflet": "^2.7.0",
+    "numeral": "^2.0.6",
     "react": "^17.0.2",
     "react-chartjs-2": "^2.9.4",
     "react-dom": "^17.0.2",
+    "react-leaflet": "^2.7.0",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
@@ -21,7 +22,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+
+    
   },
   "eslintConfig": {
     "extends": [
@@ -40,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
