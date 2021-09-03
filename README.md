@@ -4,6 +4,7 @@
 ## More updates and details are on the way very soon!
 ----
 ----
+----
 
 ## This app was created with React, Chart.js, Numeral, Leaflet, also using API from Disease.sh.
 
