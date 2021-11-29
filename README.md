@@ -1,4 +1,4 @@
-[Live Demo](https://austinschroeder.github.io/covid-19-tracker/)
+## [Live Demo](https://austinschroeder.github.io/covid-19-tracker/)
 
 
 ## More updates and details are on the way very soon!
