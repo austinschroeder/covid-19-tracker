@@ -1,5 +1,7 @@
 ## [Live Demo](https://austinschroeder.github.io/covid-19-tracker/)
 
+Simple app for tracking Covid statistics via country using React, Leaflet Maps API, and Disease.sh API.
+
 
 ## More updates and details are on the way very soon!
 ----
